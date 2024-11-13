@@ -59,12 +59,11 @@ nav{
   right: 0;
   top: 0;
   position: fixed;
-  height: 90px;
+  height: 70px;
   padding: 10px 30px;
   border-bottom: rgb(215, 214, 214) solid 1px;
   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
   z-index: 100;
-  
   backdrop-filter: blur(8px);
  
 }
@@ -176,8 +175,8 @@ nav ul li a:hover{
 
 @media (max-width: 500px) {
   .head-paragraph {
-    min-width: 100%; /* For screens smaller than 500px, use full width */
-    padding: 0 10px; /* Add padding for better readability on small screens */
+    min-width: 100%; 
+    padding: 0 10px; 
   }
 }
 
