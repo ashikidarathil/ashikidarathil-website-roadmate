@@ -1,0 +1,301 @@
+@font-face {
+  font-family: Poppins-regular;
+  src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family:Poppins-Extra-bold;
+  src: url(Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family:Poppins-medium;
+  src: url(Poppins-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+body h1,h4,h6{
+  font-family:'Poppins-Extra-bold';
+  color: rgb(9, 30, 62);
+}
+
+body h3{
+  font-family: 'Poppins-medium';
+  color: rgb(9, 30, 62);
+}
+
+
+body p{
+  font-family: 'Poppins-regular';
+  color: gray;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color:rgb(245, 245, 245) ;
+}
+
+
+.logo img{
+  width: 100px;
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  height: 90px;
+  padding: 10px 30px;
+  border-bottom: rgb(215, 214, 214) solid 1px;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  
+  backdrop-filter: blur(8px);
+ 
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  gap: 40px;
+  list-style: none;
+  text-wrap: nowrap;
+  
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins-medium';
+  transition: all 0.3s;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+  text-decoration-color:rgb(222, 175, 32) ;
+  color: black;
+}
+
+.menu{
+  display: none;
+}
+.menu img{
+  width: 30px;
+  
+  
+
+} 
+#menuList button{
+  border: thin solid black;
+  font-family: 'Poppins-medium';
+  color:gray ;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  
+
+}
+
+#menuList button:hover{
+  color: black;
+
+
+}
+@media(max-width:870px){
+
+
+
+ 
+  nav ul{
+    position: absolute ;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0;
+    background-color: white;
+    overflow: hidden;
+   
+    
+  }
+
+  nav ul li{
+    padding: 10px 20px;
+  }
+
+  nav ul button{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-right:20px ;
+    
+    
+    
+  }
+
+  .menu{
+    display: block;
+  }
+  #menuList{
+    transition: all 0.5s;
+  }
+
+
+}
+
+.head-paragraph {
+  line-height: 25px;
+  max-width: 80%;
+
+  margin: 0 auto;
+}
+
+.head-paragraph p{
+  font-size: 1.25rem;
+  text-align: center;
+  color: grey;
+}
+
+
+
+@media (max-width: 500px) {
+  .head-paragraph {
+    min-width: 100%; /* For screens smaller than 500px, use full width */
+    padding: 0 10px; /* Add padding for better readability on small screens */
+  }
+}
+
+.container img{
+  width: 100%;
+  
+}
+#First-section{
+  padding-top: 100px;
+}
+
+#Second-section{
+  padding: 20px 60px;
+  background-color: white;
+}
+
+#Third-section{
+  margin-top: 60px;
+  padding: 130px 0px;
+  background-color: white;
+}
+#Third-section img{
+  margin-bottom: 20px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  align-items: center;
+  
+ 
+}
+
+#third-main p{
+  margin-bottom: 0px;
+  
+}
+
+#third-main{
+  padding: 20px 80px;
+
+}
+
+
+.content img{
+  width: 200px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.content{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  width: 80%;
+  
+}
+
+.heading{
+  padding-left: 25px;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgb(222, 175, 32);
+  color:rgb(9, 30, 62);;
+}
+
+.content h4{
+ font-family:'Poppins-medium' ;
+ 
+ margin-bottom: 20px;
+
+
+}
+
+#content{
+background-color: white;
+border:rgb(245, 245, 245) solid  5px;
+padding-top: 50px;
+}
+#Forth-section{
+  padding-bottom: 10px;
+}
+
+.social-media-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.social-media-icons i{
+  
+  border: black solid 1px ;
+  padding:2px 8px ;
+  transition: all 0.3s;
+}
+
+#Fifth-section{
+  border-bottom: rgb(215, 214, 214) solid 1px;
+  border-top: rgb(215, 214, 214) solid 1px;
+  padding: 10px 0px;
+}
+
+#Fifth-section .learn-more{
+  font-family: 'Poppins-medium';
+  text-decoration: underline;
+  text-decoration-color:rgb(222, 175, 32) ;
+  cursor: pointer;
+  
+}
+
+.social-media-icons i:hover{
+  color: white;
+  background-color: black;
+  border: white solid 1px ;
+}
+
+
+
